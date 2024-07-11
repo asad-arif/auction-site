@@ -1,18 +1,11 @@
-import axios from "axios";
 import { useForm } from "react-hook-form";
 import { signup } from "../api";
 
 const Signup = () => {
-  type SignUpData = {
-    name: string;
-    email: string;
-    password: string;
-  };
-
   const form = useForm();
   const { register, handleSubmit, reset } = form;
 
-  const submitHandler = async (data: SignUpData) => {
+  const submitHandler = async (data: any) => {
     const res = await signup(data);
     console.log({ res });
     localStorage.setItem("user", JSON.stringify(data));

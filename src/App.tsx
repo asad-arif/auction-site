@@ -3,7 +3,6 @@ import "./App.css";
 import Nav from "./components/nav";
 import Signup from "./components/signup";
 import Login from "./components/login";
-import Footer from "./components/footer";
 import Home from "./pages/Home";
 import Dashboard from "./pages/dashboard";
 import AuctionDetails from "./components/auction-details";

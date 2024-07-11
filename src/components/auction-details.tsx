@@ -1,9 +1,4 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-
 const AuctionDetails = () => {
-  const { id } = useParams();
-
   return (
     <div className="flex gap-5 mx-10 mt-6">
       <div className="flex flex-1">
